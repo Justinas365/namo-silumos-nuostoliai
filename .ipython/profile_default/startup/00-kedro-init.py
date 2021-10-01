@@ -10,6 +10,10 @@ from kedro.framework.startup import _get_project_metadata
 
 startup_error = None
 project_path = Path(__file__).parents[3].resolve()
+
+
+@register_line_magic
+def reload_kedro(path, line=None, env: str = None, extra_params: Dict[str, Any] = None):
     """Line magic which reloads all Kedro default variables."""
     global startup_error
     global context
