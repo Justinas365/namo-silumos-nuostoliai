@@ -1,0 +1,17 @@
+q_debit: 5
+water_heat_capcity : 4200
+
+
+# distribution parameters are explored in "parameter estimation" jupyer notebook
+normal_dist_mean: 35.0
+normal_dist_sd: 15.2
+
+columns_to_drop:
+  - Data
+  - Laikas
+  - Lauko temperatura
+  - IN
+  - OUT
+  - Wind_mph
+  - delta_skirtumas
+  - joules
